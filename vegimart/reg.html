@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    
+<title>Registration Form</title>
+<link rel="stylesheet"  href="style1.css" type="text/css">    
+    
+</head>
+    
+<body>
+       
+<h1>REGISTRATION FORM</h1><hr>
+<ul>
+<br>
+&nbsp;
+<li><a href="index.html">HOME</a></li>
+&nbsp;
+<li><a href="login.html">LOGIN PAGE</a></li>
+&nbsp;
+<li class="active"><a href="reg.html">REGISTRATION PAGE</a></li>
+&nbsp;
+<li><a href="contact.html">CONTACT US</a></li>
+&nbsp;
+<li><a href="about.html">ABOUT US</a></li>
+&nbsp;
+<hr>
+<br>
+</ul>
+
+<div class="main">
+<div class="register">
+<h2 class="h2">Register here</h2>
+<form method="post" id="register" action="process.php">
+<label>First name :</label>
+<br>
+<input type="text" name="fname" id="name" placeholder="Enter your First Name">
+<br><br>
+        
+<label>Last name :</label>
+<br>
+<input type="text" name="lname" id="name" placeholder="Enter your Last Name">
+<br><br>
+        
+<label>Mobile/Whatsapp number :</label>
+<br>
+<input type="int" name="MNum" id="name" placeholder="Enter your Number"maxlength="10"required="0" >
+<br><br>
+ <label>E-mail :</label>
+<br>
+<input type="email" name="email" id="name" placeholder="Enter your Valid E-mail" required="0">
+<br><br>
+        
+<label>Enter password :</label>
+<br>
+ <input type="password" value="pass" id="myInput"><br><br>
+<input type="checkbox" onclick="myFunction()">Show Password
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+<input type="submit" value="submit"  name="submit" id="submit" >
+<br><br>
+</form>
+</div>
+</div>
+<div><a href="index.html" class="btnbk">Back</a></div>
+
+</body>
+</html>
